@@ -1,0 +1,169 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5%), rgba(0, 0, 0, 0.5%)),
+        url("../image/img1.webp") center center fixed no-repeat;
+
+    height: 500px;
+    background-size: cover;
+        transform: translateY(200px);
+        transition: transform 5s ease-in-out;
+
+        animation-name: scrollShowUp;
+        animation-timing-function: ease-in-out;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;
+
+    .row {
+        justify-content: center;
+        // opacity: 0;
+        transform: translateY(200px);
+        transition: transform 2s ease-in-out;
+
+        animation-name: scrollShowUp;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+
+        .col-md-6 {
+            .text-capitalize {
+                font-size: 25px;
+                font-weight: 400px;
+                color: $white;
+                font-family: $s-serif;
+
+                @media (max-width: 768px) {
+                    font-size: 17px;
+                }
+            }
+
+            .btn {
+                background-color: transparentize($black, 0.5%);
+                border: 1px solid $first;
+                color: $first;
+                padding: 0.35rem 1.5rem;
+                font-weight: 400px;
+                font-family: $s-serif;
+                font-size: 20px;
+                border-radius: 10px;
+                transition: box-shadow 1s ease, transform 3s ease;
+
+                &:hover {
+                }
+            }
+        }
+    }
+}
+
+.modal-content {
+    .logo {
+        max-width: 120px;
+        top: 10px;
+    }
+    .modal-body {
+        .form-control {
+            transition: all 1s ease-in-out;
+            background-color: transparent;
+            border-color: gray;
+            font-family: $s-serif;
+            &:focus {
+                border: 1px solid $first;
+            }
+        }
+        .btn {
+            background-color: transparentize($first, 0.3%);
+            font-family: $s-serif;
+        }
+
+        .form-select {
+            transition: all 1s ease-in-out;
+            background-color: transparent;
+            border-color: gray;
+            color: gray;
+            font-family: $s-serif;
+
+            &:focus {
+                border: 1px solid $first;
+            }
+        }
+
+        .text-center {
+            transition: all 1s ease-in-out;
+            color: transparentize($first, 0.3%);
+            font-family: $s-serif;
+
+            &:hover {
+                border-bottom: 1px solid $first;
+            }
+        }
+    }
+}
+
+.tes {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: $s-serif;
+}
+
+.cc-col {
+    background-color: transparentize($first, 0%);
+    margin-top: -50px;
+    color: #fff;
+    border-radius: 10px;
+    font-family: $s-serif;
+}
+
+.banner1 {
+    // background: linear-gradient(rgba(0, 0, 0, 0.5%), rgba(0, 0, 0, 0.5%)),
+    //     url("../image/img2.jpg"), center center no-repeat;
+    // height: 500px;
+    // background-position: fixed;
+    // background-size: auto;
+
+    font-family: $s-serif;
+
+    .card-img-top {
+        border-radius: 500px;
+        width: 250px;
+        height: 250px;
+        border: 2px solid $first;
+        background-position: center;
+        margin-left: 5rem;
+    }
+
+    .fw-bold {
+        color: $first;
+        font-family: $s-serif;
+    }
+}
+
+.card1 {
+    font-family: $s-serif;
+    .tes1 {
+        color: $first;
+        font-weight: 400;
+        font-size: 40px;
+        font-family: $s-serif;
+    }
+
+    .btn {
+        background-color: transparentize($black, 0.5%);
+        border: 1px solid $first;
+        color: $first;
+        padding: 0.35rem 1.5rem;
+        font-weight: 400px;
+        font-family: $s-serif;
+        font-size: 20px;
+        transition: box-shadow 1s ease, transform 3s ease;
+    }
+}
+
+@keyframes scrollShowUp {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

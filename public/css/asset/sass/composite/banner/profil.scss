@@ -1,0 +1,107 @@
+
+.profil{
+    margin-top: 2rem;
+
+
+        .card{
+    height: 500px;
+            
+            background-color:transparentize($first, .9%);
+            .row{
+                .col-sm-3{
+                    .card-left{
+                        background-color: $first;
+                        height: 500px;
+                        .card-header{
+                            .icon{
+                                width: 3rem;
+                                height: 3rem;
+                                border-radius: 3rem;
+                                i{
+                                    background-color: gray;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                        .card-body{
+                            .nav{
+                                line-height: 3.7rem;
+                                .nav-item{
+                                    color: #fff;
+                                    .nav-link{
+                                        color: #fff;
+                                        font-weight: 400;
+                                        font-family: $s-serif;
+                                    }
+
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        .col-sm-9{
+            margin-top: 1rem;
+            .card-right{
+                .card-body{
+                    
+                    .tab-content{
+                        .tab-pane{
+                            background-color: transparent;
+                            h1{
+                                font-weight: bold;
+                                color: $first;
+                                &.b{
+                                }
+
+                                .dropdown-divider{
+                                    border-color: 1px solid red;
+                                }
+
+                            }
+                            .card1{
+                                .row{
+                                    vertical-align: middle;
+                                    margin-top: 3rem;
+    
+                                    @media (max-width:792px) {
+                                            display: flex;
+                                            flex-direction: column;
+                                        
+                                    }
+                                    .col{
+                                        line-height: 1.5rem;
+                                        a{
+                                            text-decoration: none;
+                                            color: $first;
+    
+                                            &.abtn{
+                                                padding: 0.6rem 2rem;
+                                                color: #fff;
+                                                background-color: $first;
+                                            }
+    
+                                        }
+                                    }
+                                }
+    
+                            }
+
+                        }
+                       
+
+                    }
+                }
+            }
+        }
+
+        .active{
+            padding: 0rem 0.1rem;
+            & a{
+                color: black;
+            }
+        }
+}

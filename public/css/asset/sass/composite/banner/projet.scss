@@ -1,0 +1,63 @@
+.projet {
+    transform: translateY(200px);
+    transition: transform 1s ease-in-out;
+
+    animation-name: scrollShowUp;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    .col {
+        padding-top: 6rem;
+        .card-title {
+            color: $first;
+            font-weight: bold;
+            font-size: 40px;
+            font-family: $s-serif;
+        }
+        .card {
+            .img {
+                height: 100px;
+            }
+            .card-body {
+                h3 {
+                    color: $first;
+                    font-weight: bold;
+                    font-size: 30px;
+                    font-family: $s-serif;
+                }
+
+                P {
+                    word-spacing: 4px;
+                }
+            }
+        }
+    }
+
+    .bord {
+        box-shadow: 0px 5px 0px $black, 0px -5px 0px $black;
+        border-radius: 10px;
+    }
+}
+
+.bannerP {
+    font-family: $s-serif;
+
+    h3 {
+        color: $first;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: $s-serif;
+    }
+
+    .card {
+        // border: 1px solid $first;
+        box-shadow: 0px 5px 0px $black, 0px -5px 0px $black;
+
+        height: 30vh;
+    }
+
+    .fw-bold {
+        color: $first;
+        font-family: $s-serif;
+    }
+}
